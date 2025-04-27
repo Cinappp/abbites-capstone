@@ -108,3 +108,8 @@ ABbites is a full-stack mobile application designed to help college students mak
 ABbites is a feature-rich, production-ready mobile app demonstrating full-stack development with a focus on nutrition tracking. From JWT-secured login and cloud-hosted backend services to nutrient calculation and calendar logging, this app showcases secure design, modular architecture, and mobile UX. It is suitable for showcasing at interviews, capstone presentations, and as a launch-ready MVP.
 
 ---
+
+## 📚 Resources Used
+- MongoDB Atlas Docs – https://www.mongodb.com/docs/atlas/
+- Spring Boot AOP Guide – https://www.baeldung.com/spring-aop-annotation
+- Expo Secure Store – https://docs.expo.dev/versions/latest/sdk/securestore/
