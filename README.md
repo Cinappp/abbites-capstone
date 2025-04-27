@@ -1,14 +1,14 @@
- 🍽️ ABbites - Nutrition Tracker for College Campuses
+# 🍽️ ABbites - Nutrition Tracker for College Campuses
 
- 📌 Project Introduction
+## 📌 Project Introduction
 
 ABbites is a full-stack mobile application designed to help college students make healthier food decisions by providing restaurant menus with detailed nutritional information. The app addresses the common challenge of not knowing what’s in your food—especially on campus—by offering meal tracking, customization, and a calendar view to log daily nutrition.
 
 ---
 
- ✅ Functional and Non-Functional Requirements
+## ✅ Functional and Non-Functional Requirements
 
- Functional Requirements:
+### Functional Requirements:
 - JWT-secured Login and Registration (Spring Boot backend + React Native frontend)
 - View restaurant menus from MongoDB (Subway currently implemented)
 - Customize sub orders (size → bread → meat → cheese, extras, veggies, sauces)
@@ -19,7 +19,7 @@ ABbites is a full-stack mobile application designed to help college students mak
 - Global state management with React Context (`AuthContext`, `CalculatorContext`)
 - Clean mobile navigation using Expo Router with tabbed layout
 
- Non-Functional Requirements:
+### Non-Functional Requirements:
 - Passwords are securely hashed using BCrypt in the backend before storage
 - Fully responsive mobile interface designed using React Native + Expo
 - Secure token storage using `expo-secure-store` for JWT persistence
@@ -29,7 +29,7 @@ ABbites is a full-stack mobile application designed to help college students mak
 
 ---
 
- 🧠 Technology Stack & Best Practices
+## 🧠 Technology Stack & Best Practices
 
 - **Frontend:** React Native (with Expo), Expo Router, Context API, Secure Store
 - **Backend:** Spring Boot 3 (Java 17), JWT Authentication, BCrypt, SLF4J Logging
@@ -42,7 +42,7 @@ ABbites is a full-stack mobile application designed to help college students mak
 
 ---
 
- 🚀 New Technologies Learned
+## 🚀 New Technologies Learned
 
 - **React Native with Expo Router** for seamless navigation in mobile apps
 - **React Context API** for globally shared state (user auth & nutrition calculator)
@@ -52,21 +52,21 @@ ABbites is a full-stack mobile application designed to help college students mak
 
 ---
 
- 🛠️ Technical Approach & Architecture
+## 🛠️ Technical Approach & Architecture
 
- Frontend Flow:
+### Frontend Flow:
 - Tabs: Home | Search | Calculator | Account
 - Screens: 
   - Subway Menu → Item → Customize → Nutrition Summary
   - Calculator screen → Add Meals → Add to Calendar
   - Account screen → Calendar View → Show meals per date
 
- Backend Structure:
+### Backend Structure:
 - Modularized folders by domain: `controllers/`, `models/`, `services/`, `repository/`
 - Each restaurant (e.g. Subway) has its own substructure (e.g. `models/subway/`, `controllers/subway/`)
 - Nutrition calculator receives user selections and returns full nutrient summary
 
- Design Diagrams:
+### Design Diagrams:
 - Class diagrams for models like `UserModel`, `SubwayOrderModel`, and `NutrientModel`
 - Sequence diagrams to explain:
   - Login and JWT flow
@@ -75,26 +75,26 @@ ABbites is a full-stack mobile application designed to help college students mak
 
 ---
 
- ⚠️ Risks and Challenges
+## ⚠️ Risks and Challenges
 
- Challenges Faced:
+### Challenges Faced:
 - MongoDB connection issues due to IP whitelisting
 - JWT user state not updating across screens in Expo
 - `NullPointerException` in nutrition calculator when data was incomplete
 
- Solutions:
+### Solutions:
 - Resolved MongoDB IP issues by properly configuring MongoDB Atlas access
 - Migrated local state to global `AuthContext` and `CalculatorContext`
 - Added data validation and fallback logic in backend services for null-safe nutrition summaries
 
- Risk Management:
+### Risk Management:
 - Used GitHub version control to manage features in branches
 - Tested all API endpoints using Postman before frontend integration
 - Implemented logging using SLF4J + Spring AOP to catch edge-case failures
 
 ---
 
- 🧩 Outstanding Issues
+## 🧩 Outstanding Issues
 
 - Only Subway is fully implemented; additional restaurants (Taco Bell, Chick-fil-a) are planned
 - Calendar view supports one-day-at-a-time view; weekly/monthly summaries are future enhancements
@@ -103,13 +103,15 @@ ABbites is a full-stack mobile application designed to help college students mak
 
 ---
 
- 💡 Project Summary
+## 💡 Project Summary
 
 ABbites is a feature-rich, production-ready mobile app demonstrating full-stack development with a focus on nutrition tracking. From JWT-secured login and cloud-hosted backend services to nutrient calculation and calendar logging, this app showcases secure design, modular architecture, and mobile UX. It is suitable for showcasing at interviews, capstone presentations, and as a launch-ready MVP.
 
 ---
 
- 📚 Resources Used
+## 📚 Resources Used
 - MongoDB Atlas Docs – https://www.mongodb.com/docs/atlas/
 - Spring Boot AOP Guide – https://www.baeldung.com/spring-aop-annotation
 - Expo Secure Store – https://docs.expo.dev/versions/latest/sdk/securestore/
+  
+---
